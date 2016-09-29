@@ -1,0 +1,18 @@
+TODO
+====
+
+Just a list of thoughts/notes for future work/next intended work
+
+- Move away from httpmock to creating a really basic http server and testing
+  against that
+  - The goal is to be able to actually test a proxy in a real way
+
+- Request aggregator
+  - Given a number of requests, print out the following statistics:
+    - average RTT (needs to be added to sidelines.Request)
+    - aggregate status codes (as in `200: 32, 404: 12`)
+
+- "Floodgate"
+  - Make X concurrent requests
+  - Stop after Y requests
+  - Stop making new requests after Z time
